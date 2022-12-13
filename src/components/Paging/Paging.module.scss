@@ -1,0 +1,32 @@
+.paging{
+    display: flex;
+    justify-content: center;
+    margin: 12px 8px;
+
+    .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 3px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        user-select: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .number.max-number, .number.min-number{
+        display: none;
+        color: rgb(133, 133, 133);
+
+        &.show{
+            display: flex;
+        }
+    }
+
+    .number.active{
+        background-color: var(--primary-color);
+    }
+}

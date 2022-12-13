@@ -1,0 +1,24 @@
+.wrapper{
+    margin-top: 32px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 30px;
+        margin: 0 4px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 650px) {
+    .title{
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+}

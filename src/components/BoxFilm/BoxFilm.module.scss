@@ -1,0 +1,74 @@
+@media (max-width: 1240px) {
+    .box-film {
+        grid-template-columns: 50% 50% !important;
+    }
+}
+
+@media (max-width: 860px) {
+    .box-film {
+        grid-template-columns: 100% !important;
+    }
+}
+
+.box-film{
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+
+.film-item {
+    display: inline-flex;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #151A26;
+    margin: 6px;
+    user-select: none;
+    border: 1px solid transparent;
+    cursor: default;
+
+    img {
+        object-fit: cover;
+        width: 100px;
+        height: 150px;
+        border-radius: 8px;
+    }
+
+    &:hover{
+        border: 1px solid #fff;
+    }
+}
+
+.control-infor {
+    padding: 6px 12px;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .name-film {
+        font-weight: 600;
+        font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #fff;
+    }
+
+    .category{
+        font-size: 14px;
+        font-weight: 500;
+        color: #d8d8d8;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .content{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: var(--gray-color);
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}

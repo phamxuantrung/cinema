@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --h-navbar: 72px;
+    --primary-color: #fc6559;
+    --primary-light-color: #fc6459c1;
+    --main-color: #001331;
+    --black-color: rgba(22, 24, 35, 1);
+    --gray-color: #818083;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(90deg, #342449, #284567, #22364f);
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.loadding-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.loadding-page img {
+    width: 300px;
+}
+
+.slick-dots li button:before {
+    color: var(--primary-color) !important;
+}
+
+.icon {
+    width: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #22364f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #342449;
+}
+
+
+@media (max-width: 960px) {
+    :root {
+        --h-navbar: 52px;
+    }
+}
